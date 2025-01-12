@@ -38,12 +38,12 @@ This study involved extracting RNA from 18 different tissues (e.g., black skin, 
 4. **Gene Expression Matrix Generation**  
    - Quantify aligned results using `HTSeq-count`  
 
-**Due to the limitation of my personal computer hardware performance, I used Amazon Cloud s3bucket and EC2 (r5.2xlarge) to complete the step 3 and 4.**
-**The result of the whole upstream steps (Gene_Expression_Matrix.xlsx) is now in the data folder**
+- **Due to the limitation of my personal computer hardware performance, I used Amazon Cloud s3bucket and EC2 (r5.2xlarge) to complete the step 3 and 4.**
+- **The result of the whole upstream steps (Gene_Expression_Matrix.xlsx) is now in the data folder**
 
 **Downstream Steps:**  (Run `tissue-to-tissue_heatmap.R` in scripts folder)
-5. Differential expression analysis and tissue-specific expression (TSE) analysis using `EdgeR`  
-6. Visualization of differential gene results (e.g., volcano plots, heatmaps, etc.)  
+- 5. Differential expression analysis and tissue-specific expression (TSE) analysis using `EdgeR`  
+- 6. Visualization of differential gene results (e.g., volcano plots, heatmaps, etc.)  
 
 ---
 
