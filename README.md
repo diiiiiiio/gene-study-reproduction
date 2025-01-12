@@ -20,7 +20,8 @@ This study involved extracting RNA from 18 different tissues (e.g., black skin, 
 
 **I have structured the workflow into the following steps:**  
 
-1. **Data Acquisition** (Run `bash scripts/01_download.sh` in the project directory)  
+**Upstream Steps:**
+1. **Data Acquisition** (Run `bash scripts/01_download.sh` in scripts folder)  
    - Organize file structure  
    - Create necessary folders  
    - Download `sratoolkit`  
@@ -37,7 +38,10 @@ This study involved extracting RNA from 18 different tissues (e.g., black skin, 
 4. **Gene Expression Matrix Generation**  
    - Quantify aligned results using `HTSeq-count`  
 
-**Downstream Steps:**  
+**Due to the limitation of my personal computer hardware performance, I used Amazon Cloud s3bucket and EC2 (r5.2xlarge) to complete the step 3 and 4.**
+**The result of the whole upstream steps (Gene_Expression_Matrix.xlsx) is now in the data folder**
+
+**Downstream Steps:**  (Run `tissue-to-tissue_heatmap.R` in scripts folder)
 5. Differential expression analysis and tissue-specific expression (TSE) analysis using `EdgeR`  
 6. Visualization of differential gene results (e.g., volcano plots, heatmaps, etc.)  
 
@@ -50,7 +54,17 @@ This study involved extracting RNA from 18 different tissues (e.g., black skin, 
 - **Tools and Versions Used:**  
   - SRA Toolkit (`fastq-dump`/`fasterq-dump`)  
   - FastQC  
-  - Trimmomatic / Cutadapt (as needed)  
-  - TopHat2 or HISAT2  
+  - Trimmomatic  
+  - STAR
   - HTSeq  
-  - R language with packages such as `EdgeR`, `DESeq`, `gplots`  
+  - R studio`
+
+---
+
+# Final Results  
+
+- **Tissue x Tissue heatmap and hierarchical clustering of gene experssion data Comparison:**
+ origional one in paper: ![Screenshot 2025-01-10 185934](https://github.com/user-attachments/assets/cbdf8277-0025-4b45-8762-c0026b06919b)
+ mine: ![Rplot05](https://github.com/user-attachments/assets/1df035c2-1fe5-4629-929e-9d53ab90426c)
+
+
