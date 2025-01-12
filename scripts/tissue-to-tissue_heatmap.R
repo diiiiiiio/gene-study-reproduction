@@ -4,12 +4,12 @@ library(readxl)
 library(RColorBrewer)
 
 # 第1步：加载数据
-expression_data <- read_excel("MM.xlsx")
+expression_data <- read_excel("path/to/Gene_Expression_Matrix.xlsx")
 expression_data <- as.data.frame(expression_data)
 rownames(expression_data) <- expression_data[, 1]  # 设置基因名为行名
 expression_data <- expression_data[, -1]           # 移除基因名列
 
-metadata <- read.csv("SraRunTable.csv")
+metadata <- read.csv("path/to/SraRunTable.csv")
 rownames(metadata) <- metadata$Run
 metadata <- metadata[rownames(metadata) %in% colnames(expression_data), ]
 expression_data <- expression_data[, colnames(expression_data) %in% rownames(metadata)]
