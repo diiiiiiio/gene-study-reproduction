@@ -64,7 +64,7 @@ This study involved extracting RNA from 18 different tissues (e.g., black skin, 
 # Final Results  
 
 - **Tissue x Tissue heatmap and hierarchical clustering of gene experssion data Comparison:**
- origional one in paper: ![Screenshot 2025-01-10 185934](https://github.com/user-attachments/assets/cbdf8277-0025-4b45-8762-c0026b06919b)
- mine: ![Rplot05](https://github.com/user-attachments/assets/1df035c2-1fe5-4629-929e-9d53ab90426c)
+ - origional one in paper: ![Screenshot 2025-01-10 185934](https://github.com/user-attachments/assets/cbdf8277-0025-4b45-8762-c0026b06919b)
+ - mine: ![Rplot05](https://github.com/user-attachments/assets/1df035c2-1fe5-4629-929e-9d53ab90426c)
 
 
